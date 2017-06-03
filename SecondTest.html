@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script language="javascript">
+      var str=document.f1.txt.value;
+      function changeText(){
+        var s=document.f1.txt.value;
+        // alert(""+s.charAt(2));
+        var result;
+        // s.toUpperCase();
+        for (var i = 0; i < s.length; i++) {
+          var tmp=s.charAt(i);
+           if(tmp>97){
+             t.toUpperCase();
+             alert(t.toUpperCase());
+            //  result+=tmp;
+           }else {
+            //  tmp+=32;
+              // tmp.toLowerCase();
+              // result+=tmp;
+           }
+         }
+        document.f1.show.value=result;
+      }
+    </script>
+  </head>
+  <body onload="document.f1.txt.focus()">
+    <form name="f1" action="index.html" method="post">
+      <input type="text" name="txt" value="" onBlur="changeText()">
+      <br>
+      <input type="text" name="show" value="">
+      <br>
+      <button type="button" name="ok">ok</button>
+    </form>
+  </body>
+</html>

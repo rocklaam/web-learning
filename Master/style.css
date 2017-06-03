@@ -1,0 +1,31 @@
+@charset "UTF-8";
+body{
+  background-color: powderblue;
+}
+h1{
+  color: blue;
+  font-family: serif;
+  font-size: 200%;
+}
+h2{
+  color: red;
+  font-family: arial;
+  font-size: 150%
+}
+p{
+  border: 1px solid black;
+  color: white;
+  /*padding: 30px;*/
+  margin: 30px;
+  margin-top: 100px;
+}
+#p01{
+  color: black;
+}
+p.error{
+  color: red;
+  /*transform: translateX(-50%) translateY(-50%);*/
+}
+h1.normal{
+  color: black;
+}

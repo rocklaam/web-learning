@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<style media="screen">
+		h1{
+			background-color: black;
+		}
+		img{
+			width: auto;;
+		}
+	</style>
+	<style media="screen">
+		a:hover{
+			color: white;
+			text-decoration: none;
+			background-color: inherit;
+		}
+		table,td,th{
+			border:2px solid;
+			border-collapse: collapse;
+			padding: 15px;
+			text-align: right;
+			border-spacing: 5px;/*only have an effect when border-collapse is not worked*/
+		}
+	</style>
+	<script type="text/javascript">
+		function showLabel() {
+			document.getElementsByTagName('luckyNum').label.style.display="block";
+		}
+	</script>
+	<link rel="stylesheet" href="Master/style.css">
+</head>
+<body style="background-color:powderblue;color:red">
+	<h1 id="headOfPage" style="color:red;text-align: center;">My first heading</h1>
+	<h2>My second heading</h2>
+	<h3 style="font-family:courier">My third heading</h3>
+	<p title="this is a tooltip"><a href="https://www.w3schools.com/js/default.asp" target="_blank">Link to the next lesson on W3school_open in the new tab</a></p>
+	<a href="https://www.w3schools.com/html/html_form_attributes.asp#footer" target="_blank">
+		this is old link (Because you did not do the test for this lession)</a>
+	<br>
+	<img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="loi anh" style="width:98px;height:98px">
+	<a href="http://www.google.com.vn"><img src="/home/lam/Downloads/league_of_legends_riot_games_bard_minimalism_103025_1920x1080.jpg" alt="loi anh" width="102" height="102"></a>
+	<br>
+	<a href="TextCSS.html" target="_top">This a local link</a>
+	<br>
+	<button type="button" >Click me!!!</button>
+	<pre style="color:blue">
+	Twinkle twinkle twinkle star
+	How i wonder what you are
+	</pre>
+	<abbr title="World Health Organization">WHO</abbr>
+	<p><b>Bold </b> <strong>is same as Strong </strong> <mark>Marked </mark> <small>Small </small> <i>Italic </i> <em> is same as Emphasized </em><br></p>
+	<p><del>Deleted </del> <ins>Inserted </ins> <sub>Subcript </sub> <sup>Supercript </sup></p>
+	<p><cite>The Scream (displayed in <i>italic </i>  style)</cite> by Edward Munch. Painted in 1893</p>
+	<bdo dir="rtl">this test will be written in right to left direction</bdo><br>
+	<!-- Link is alway in a Tab
+	this is just a comment for the HTML file-->
+	<code><kbd>this is the inout you typed from keyboard</kbd><br>
+	<samp>this is the output</samp></code>
+	<p style="background-color:rgb(105, 119, 147);color:rgb(0,0,0)"> this is the paragraph with color function</p>
+	<br>
+	<p><img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="w3school.com" style="width:145px; height:145px; float:right;">
+	The imagine will float to the right of the text,<mark>the text is independence about the height</mark></p>
+	<img src="TongHop.jpg" alt="tongHop" usemap="#logoTongHop" >
+	<br><map name="logoTongHop">
+		<area shape="rect" coords="0,0,215,300" href="Logo.html#microsoft" alt="Microsoft">
+		<area shape="rect" coords="215,0,430,300" href="Logo.html#youtube" alt="Youtube">
+		<area shape="circle" coords="540,150,50" href="Logo.html#facebook" alt="Facebook">
+	</map>
+	<iframe src="Logo.html" width="1020" height="300px" style="margin-left:400px;border:10px solid ;" name="Lam'sFrame"></iframe>
+	<br>
+	<p><a href="TextCSS.html" target="Lam'sFrame"> this is a link to change the content of the frame </a></p>
+	<br>
+	<table width="500">
+		<tr>
+			<th>name</th>
+			<th>age</th>
+			<th>gender</th>
+		</tr>
+		<tr >
+			<td>Lam</td>
+			<td>22</td>
+			<td>male</td>
+		</tr>
+	</table>
+	<br>
+	<form id="footer"action="index.html" method="post" name="form1">
+		<fieldset>
+			<legend>the first form</legend>
+			firstname: <br>
+			<input type="text" name="firstname" value="" maxlength="32"><br>
+			lastname: <br>
+			<input type="text" name="lastname" value="" maxlength="32"><br>
+			male <input type="radio" name="gender" value="male">
+			female <input type="radio" name="gender" value="female"><br>
+			<!-- you have to set the same name, unless the both radio buttons can be chosen at the same time -->
+			<select name="langquage choosing">
+				<option value="c++">c++</option>
+				<option value="java">java</option>
+				<option value="pythons" selected="false">pythons</option>
+				<!-- thought the selected="false", the pythons will be chosen as default, b/c it has selected attribute -->
+			</select><br>
+			<textarea name="introducing" rows="8" cols="80" placeholder="introduce something about you..."></textarea><br>
+			<button type="button" name="button" onclick="alert('this is a button created by using button tag')">button1</button>
+			<input type="button" name="button2" value="button2" onclick="alert('this is a button created by using input tag')">
+			<keygen name="name" challenge="string" keytype="RSA" keyparams="medium">
+			<br>
+				<!--  i don not know how is work-->
+				Browsers:
+			<input list="browsers">
+			<!--  if you dont have the command above, the list will be not displayed in website-->
+  		<datalist id="browsers">
+    	<option value="Internet Explorer">
+    	<option value="Firefox">
+    	<option value="Chrome">
+    	<option value="Opera">
+    	<option value="Safari">
+  		</datalist>
+			<br>
+			select your favorite color: <input type="color" name="favcolor" value="#FFFAAA">
+			<br>
+			your birthday: <input type="date" name="birthday">
+			<br>
+			<!-- <input type="datetime-local" name="" value=""> -->
+			<!-- is the same with android XML -->
+			<br>
+			<input type="file" name="upload" value="abc">
+			<input type="number" name="luckyNum" placeholder="type you lucky number--> your birthday" min="1" max="31" onerror="showLabel()">
+			<label for="luckyNum" style="display:none">nhap sai ngay sinh r nhe ban!!!</label>
+			<!-- Even thought the hidden="false" it still be hidden on the Web-> remove the hidden attri-->
+		</fieldset>
+	</form>
+	<a href="Index.html#headOfPage"> go to the top of the page	</a>
+</body>
+</html>
